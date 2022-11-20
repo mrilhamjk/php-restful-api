@@ -1,0 +1,17 @@
+DirectoryIndex index.php
+
+# Enable Apache rewrite engine
+RewriteEngine on
+
+# Set your rewrite base
+# Edit this in your init method too
+# If your script is in a subfolder
+RewriteBase /
+
+# Send folders or files directly
+# If they are on the server
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Push every request to index.php
+RewriteRule ^(.\*)$ index.php [QSA]

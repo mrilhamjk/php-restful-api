@@ -1,0 +1,19 @@
+{
+  "name": "ilhamovic/php-restful-api",
+  "description": "PHP RESTful API",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Ilham Jaya Kusuma",
+      "email": "ilhamjkid@gmail.com"
+    }
+  ],
+  "require": {
+    "firebase/php-jwt": "^6.3"
+  }
+}
